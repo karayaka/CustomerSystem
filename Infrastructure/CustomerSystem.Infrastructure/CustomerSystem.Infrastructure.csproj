@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Repositorys\" />
+    <None Remove="InfrastructureRegistirations\" />
+    <None Remove="Services\" />
+    <None Remove="Filters\" />
+    <None Remove="MapperProfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositorys\" />
+    <Folder Include="InfrastructureRegistirations\" />
+    <Folder Include="Services\" />
+    <Folder Include="Filters\" />
+    <Folder Include="MapperProfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerSystem.Persistence\CustomerSystem.Persistence.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.16" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.104" />
+  </ItemGroup>
+</Project>

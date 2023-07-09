@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="EntitiyModels\" />
+    <None Remove="Enums\" />
+    <None Remove="DTOModels\" />
+    <None Remove="EntitiyModels\CustomerModels\" />
+    <None Remove="EntitiyModels\BaseModels\" />
+    <None Remove="Exceptions\" />
+    <None Remove="DTOModels\BaseDtos\" />
+    <None Remove="DTOModels\CustomerDtos\" />
+    <None Remove="Validators\" />
+    <None Remove="Validators\Customer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EntitiyModels\" />
+    <Folder Include="Enums\" />
+    <Folder Include="DTOModels\" />
+    <Folder Include="EntitiyModels\CustomerModels\" />
+    <Folder Include="EntitiyModels\BaseModels\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="DTOModels\BaseDtos\" />
+    <Folder Include="DTOModels\CustomerDtos\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Validators\Customer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+</Project>

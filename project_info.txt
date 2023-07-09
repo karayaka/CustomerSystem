@@ -1,0 +1,9 @@
+﻿ -> Wep Api Projesi için seçilen .net sürümü .net6 dır (LTS desteği olduğu için) 
+ -> ORM kütüphanesi olarak entity freamwork kullanılmıştır ve code first yaklaşım tercih edilmiştir
+ -> Veri tabanı tercigi Postgresql olmuştur.
+ -> Proje mimarisi için onion architecture  tercih edilmiştir bu mimari tercihinde en önemli faktör farklı servislerle olan iletişimin yönetimimni kolaylaştırmasıdır.
+(not DDD pattern ve mediator mimarisi de kullanılailirdi fakat sürecin bayrama denk gelmesi ve proje süresini uzatacağını düşündüğüm için tercih etmedim)
+ -> Validation işlemleri için Fluentvalidation tercih edilmiştir kolay özelleştirile bilme özelliği sebebi ile
+ -> log işlemleri ile ilgili seri log kürüphanesi tercihedilmiş olup log kayıtları veri tabanında tutulmuştur
+ -> Chaching işlemlerinde distributed chache pattern tercih edilmiş olup chace storage olarak redis veri tababanı(chache storage) tercih edilmiştir
+ -> Proje sürecinde oop ve clean architecture kurallarına dikkat edilmeye çalışılmıştır!
